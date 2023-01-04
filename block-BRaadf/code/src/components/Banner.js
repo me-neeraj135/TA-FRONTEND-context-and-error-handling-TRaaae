@@ -1,12 +1,15 @@
+/** @format */
+
 import React from "react";
+import UserContext from "./UserContext";
 
 class Banner extends React.Component {
+  static contextType = UserContext;
   render() {
-    let { isDarkMode } = this.props;
     return (
       <div
         className={
-          isDarkMode
+          this.context.isDarkMode
             ? "message-dark message--banner message--success"
             : "message message--banner message--success"
         }

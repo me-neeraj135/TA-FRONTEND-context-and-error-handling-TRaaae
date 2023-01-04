@@ -1,3 +1,5 @@
+/** @format */
+
 import Banner from "./Banner";
 import Cards from "./Cards";
 import Paragraph from "./Paragraph";
