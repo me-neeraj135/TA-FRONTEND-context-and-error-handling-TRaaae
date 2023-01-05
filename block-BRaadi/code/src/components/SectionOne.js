@@ -1,8 +1,10 @@
+/** @format */
+
 import React from "react";
 
 class SectionOne extends React.Component {
   state = {
-    value: "Hello World!",
+    value: "HelloWorld!",
   };
   render() {
     return (

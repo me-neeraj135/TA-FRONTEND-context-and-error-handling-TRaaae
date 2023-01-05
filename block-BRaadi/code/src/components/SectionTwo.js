@@ -1,9 +1,16 @@
-import React from "react";
+/** @format */
 
+import React from "react";
+import ErrorBoundary from "./ErrorBoundary";
 class SectionTwo extends React.Component {
   handleClick = () => {
-    throw new Error("An error occured!");
+    try {
+      throw new Error("An error occured!");
+    } catch (error) {
+      console.log(error);
+    }
   };
+
   render() {
     return (
       <div className="box s1-c">
